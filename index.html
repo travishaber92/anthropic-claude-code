@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ease Your Back — Lower Back Pain Relief</title>
+  <meta name="description" content="Gentle stretches, posture tips, and daily habits to help relieve lower back pain." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="brand">Ease<span>Your</span>Back</a>
+      <ul>
+        <li><a href="#stretches">Stretches</a></li>
+        <li><a href="#posture">Posture</a></li>
+        <li><a href="#habits">Habits</a></li>
+        <li><a href="#redflags">When to see a doctor</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-inner" id="top">
+      <h1>Relieve lower back pain, one gentle minute at a time.</h1>
+      <p class="lede">
+        A calming, science-backed routine of stretches, posture resets, and
+        everyday habits you can do from your chair, bed, or floor.
+      </p>
+      <div class="cta-row">
+        <a href="#routine" class="btn primary">Start the 5-minute routine</a>
+        <a href="#stretches" class="btn ghost">Browse all stretches</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="routine" class="section band">
+      <div class="section-head">
+        <h2>5-Minute Relief Routine</h2>
+        <p>Press start. Breathe slowly. Stop immediately if anything sharpens pain.</p>
+      </div>
+
+      <div class="timer-card" role="region" aria-label="Guided routine timer">
+        <div class="timer-display">
+          <div class="timer-step" id="stepName">Get comfortable</div>
+          <div class="timer-clock" id="clock">00:30</div>
+          <div class="timer-hint" id="stepHint">We'll begin with Child's Pose.</div>
+        </div>
+        <div class="timer-controls">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="pauseBtn" class="btn ghost" disabled>Pause</button>
+          <button id="resetBtn" class="btn ghost">Reset</button>
+        </div>
+        <ol class="timer-list" id="timerList"></ol>
+      </div>
+    </section>
+
+    <section id="stretches" class="section">
+      <div class="section-head">
+        <h2>Gentle Stretches</h2>
+        <p>Filter by how much you can move right now.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter stretches">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="bed" role="tab">From bed</button>
+        <button class="chip" data-filter="chair" role="tab">At a chair</button>
+        <button class="chip" data-filter="floor" role="tab">On the floor</button>
+      </div>
+
+      <div class="grid" id="stretchGrid"></div>
+    </section>
+
+    <section id="posture" class="section band">
+      <div class="section-head">
+        <h2>Posture Resets</h2>
+        <p>Small adjustments that unload your lumbar spine across the day.</p>
+      </div>
+      <div class="tip-grid">
+        <article class="tip">
+          <h3>Sitting</h3>
+          <p>Hips slightly higher than knees. Feet flat. Screen at eye level. Shoulders back and down.</p>
+        </article>
+        <article class="tip">
+          <h3>Standing</h3>
+          <p>Soft knees, weight even on both feet, ribs stacked over pelvis. Shift your weight every few minutes.</p>
+        </article>
+        <article class="tip">
+          <h3>Sleeping</h3>
+          <p>Side sleeping with a pillow between the knees, or on your back with a pillow under the knees.</p>
+        </article>
+        <article class="tip">
+          <h3>Lifting</h3>
+          <p>Hinge at the hips, keep the object close, bend the knees — let your legs do the work, not your back.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="habits" class="section">
+      <div class="section-head">
+        <h2>Daily Habits That Help</h2>
+      </div>
+      <ul class="habits">
+        <li><strong>Move every 30 minutes.</strong> A one-minute walk resets pressure in the discs.</li>
+        <li><strong>Walk 20–30 minutes a day.</strong> Low-impact activity is one of the best-studied treatments.</li>
+        <li><strong>Hydrate.</strong> Intervertebral discs are mostly water.</li>
+        <li><strong>Strengthen your core gradually.</strong> Think glute bridges and dead bugs, not sit-ups.</li>
+        <li><strong>Manage stress.</strong> Tension amplifies pain perception — try 4-7-8 breathing.</li>
+        <li><strong>Heat, then move.</strong> 10 minutes of heat followed by gentle movement often beats rest alone.</li>
+      </ul>
+    </section>
+
+    <section id="redflags" class="section band warn">
+      <div class="section-head">
+        <h2>When to See a Doctor</h2>
+        <p>This site is educational and is not a substitute for medical care.</p>
+      </div>
+      <ul class="redflags">
+        <li>Pain after a fall, crash, or significant trauma</li>
+        <li>Numbness, tingling, or weakness in a leg or foot</li>
+        <li>Loss of bladder or bowel control — seek emergency care</li>
+        <li>Fever, unexplained weight loss, or night sweats with back pain</li>
+        <li>Pain that wakes you at night or keeps worsening over weeks</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with care. Always listen to your body and consult a qualified clinician for persistent pain.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
