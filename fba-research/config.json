@@ -1,0 +1,111 @@
+{
+  "_note": "Fee figures are US estimates. Check them against Amazon's FBA Revenue Calculator and update them when Amazon changes its fees.",
+  "fees": {
+    "referral_rate_default": 0.15,
+    "referral_rate_by_category": {
+      "Electronics": 0.08,
+      "Camera & Photo": 0.08,
+      "Computers": 0.08,
+      "Grocery": 0.15,
+      "Clothing": 0.17,
+      "Jewelry": 0.2
+    },
+    "referral_min": 0.3,
+    "small_standard_max_in": [
+      15,
+      12,
+      0.75
+    ],
+    "small_standard_max_lb": 1.0,
+    "large_standard_max_in": [
+      18,
+      14,
+      8
+    ],
+    "large_standard_max_lb": 20.0,
+    "dim_weight_divisor": 139,
+    "small_standard_fees": [
+      {
+        "max_lb": 0.25,
+        "fee": 3.06
+      },
+      {
+        "max_lb": 0.5,
+        "fee": 3.15
+      },
+      {
+        "max_lb": 0.75,
+        "fee": 3.24
+      },
+      {
+        "max_lb": 1.0,
+        "fee": 3.33
+      }
+    ],
+    "large_standard_fees": [
+      {
+        "max_lb": 0.25,
+        "fee": 3.68
+      },
+      {
+        "max_lb": 0.5,
+        "fee": 3.9
+      },
+      {
+        "max_lb": 0.75,
+        "fee": 4.15
+      },
+      {
+        "max_lb": 1.0,
+        "fee": 4.55
+      },
+      {
+        "max_lb": 1.5,
+        "fee": 5.37
+      },
+      {
+        "max_lb": 2.0,
+        "fee": 5.77
+      },
+      {
+        "max_lb": 3.0,
+        "fee": 6.1
+      }
+    ],
+    "large_standard_over_3lb_base": 6.92,
+    "large_standard_per_extra_lb": 0.32,
+    "oversize_base": 9.73,
+    "oversize_per_lb": 0.42,
+    "storage_per_cubic_ft_month": 0.78,
+    "storage_months": 2,
+    "inbound_shipping_per_lb": 0.5,
+    "prep_per_unit": 0.25
+  },
+  "assumptions": {
+    "default_cost_ratio": 0.25,
+    "bsr_to_sales_k": 532000,
+    "bsr_to_sales_exponent": 0.85,
+    "bsr_to_sales_by_category": {}
+  },
+  "targets": {
+    "min_monthly_sales": 100,
+    "good_monthly_sales": 1000,
+    "price_sweet_spot": [
+      20,
+      50
+    ],
+    "min_price": 12,
+    "target_margin": 0.3,
+    "target_roi": 1.0,
+    "max_reviews": 2000,
+    "max_sellers": 15,
+    "weak_rating": 4.2
+  },
+  "weights": {
+    "demand": 0.25,
+    "profit": 0.25,
+    "competition": 0.35,
+    "price": 0.1,
+    "opportunity": 0.05
+  }
+}
